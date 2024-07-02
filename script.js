@@ -8,7 +8,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const regex = /^(1\s?)?(\(\d{3}\)|\d{3})[\s]?\d{3}[\s]?\d{4}$/;
     return regex.test(phoneNumber);
   }
-  
+
   checkBtn.addEventListener('click', () => {
     const phoneNumber = userInput.value.trim();
 
@@ -25,5 +25,4 @@ document.addEventListener('DOMContentLoaded', () => {
     resultsDiv.textContent = '';
     userInput.value = '';
   });
-
 });
