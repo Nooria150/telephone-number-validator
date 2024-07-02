@@ -63,16 +63,17 @@ button#clear-btn {
   .container {
     padding: 15px;
   }
-  
+
   h1 {
     font-size: 22px;
   }
-  
+
   label {
     font-size: 16px;
   }
-  
-  input, button {
+
+  input,
+  button {
     font-size: 16px;
     padding: 12px;
   }
