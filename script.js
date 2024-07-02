@@ -8,7 +8,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const phoneNumber = userInput.value.trim();
 
     if (phoneNumber === '') {
-      alert ('Please provide a phone number');
+      alert('Please provide a phone number');
     } else if (isValidUSPhoneNumber(phoneNumber)) {
       resultsDiv.textContent = `Valid US number: ${phoneNumber}`;
     } else {
