@@ -8,7 +8,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const phoneNumber = userInput.value.trim();
 
     if (phoneNumber === '') {
-      alert('Please provide a phone number');
+      alert ('Please provide a phone number');
     } else if (isValidUSPhoneNumber(phoneNumber)) {
       resultsDiv.textContent = `Valid US number: ${phoneNumber}`;
     } else {
@@ -22,7 +22,7 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 
   function isValidUSPhoneNumber(phoneNumber) {
-    const regex = /^(1\s?)?(\(\d{3}\)|\d{3})[\s\-]?\d{3}[\s\-]?\d{4}$/;
+    const regex = /^(1\s?)?(\(\d{3}\)|\d{3})[\s]?\d{3}[\s]?\d{4}$/;
     return regex.test(phoneNumber);
   }
 });
