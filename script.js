@@ -13,7 +13,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const phoneNumber = userInput.value.trim();
 
     if (phoneNumber === '') {
-      alert('Please provide a phone number');//eslint-disable-next-line no alert
+      alert('Please provide a phone number');// eslint-disable-next-line no-alert
     } else if (isValidUSPhoneNumber(phoneNumber)) {
       resultsDiv.textContent = `Valid US number: ${phoneNumber}`;
     } else {
